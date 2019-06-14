@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="well-schematics",
     packages=("well_schematics",),
-    version="0.1.1",
+    version="0.1.2",
     description="matplotlib code for drawing borehole schematic diagrams",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
