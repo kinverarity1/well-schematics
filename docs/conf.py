@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Borehole/well schematics in matplotlib"
+project = "Well schematics in matplotlib"
 copyright = "2019, Kent Inverarity"
 author = "Kent Inverarity"
 

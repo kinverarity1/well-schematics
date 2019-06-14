@@ -1,8 +1,11 @@
 # well-schematics
 
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/kinverarity1/well-schematics/blob/master/LICENSE)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/python-sa-gwdata.svg)](https://pypi.python.org/pypi/well-schematics/)
+[![PyPI version shields.io](https://img.shields.io/pypi/v/python-sa-gwdata.svg)](https://pypi.python.org/pypi/well-schematics/)
+[![Documentation Status](https://readthedocs.org/projects/python-sa-gwdata/badge/?version=latest)](http://well-schematics.readthedocs.io/?badge=latest)
 
-matplotlib code for drawing borehole schematic diagrams
+matplotlib code for drawing borehole/well schematic diagrams
 
 ## Install
 
@@ -11,6 +14,8 @@ $ pip install -U well-schematics
 ```
 
 ## Usage
+
+Check out the [documentation](http://well-schematics.readthedocs.io/?badge=latest).
 
 ```python
 >>> from well_schematics import draw_simple
