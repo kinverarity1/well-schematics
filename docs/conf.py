@@ -22,7 +22,7 @@ copyright = "2019, Kent Inverarity"
 author = "Kent Inverarity"
 
 # The full version, including alpha/beta/rc tags
-release = "0.1.0"
+release = "0.1.1"
 
 master_doc = "index"
 
