@@ -3,16 +3,28 @@ from matplotlib import patches as mpatches
 from matplotlib import transforms as mtransforms
 
 
-def draw_simple(pzone_top, pzone_bottom, casing_top=0, pzone_type="S", ax=None):
+def draw_simple(
+    pzone_top,
+    pzone_bottom,
+    casing_top=0,
+    pzone_type="S",
+    ax=None,
+    tight_layout=True,
+    depth_tick_markers=False,
+):
     """Draw simple well schematic.
 
     Args:
         pzone_top (float): top of the production zone
         pzone_bottom (float): bottom of the production zone
         casing_top (float): top of the casing
-        pzone_type (str): either "S" (screen), "SC" (slotted casing)
-            or "OH" (open hole)
+        pzone_type (str): either "S" for screen, "SC" for slotted casing,
+            or "OH" for open hole.
         ax (matplotlib.Axes): to draw in
+        tight_layout (bool): run tight_layout() on ax.figure to rearrange
+            things to fit.
+        depth_tick_markers (bool): show tick markers for the vertical
+            depth axis. Labels will always appear.
 
     The simple model used here assumes that a well consists of solid casing
     of one diameter from top, and then immediately below that, one type of
@@ -76,10 +88,15 @@ def draw_simple(pzone_top, pzone_bottom, casing_top=0, pzone_type="S", ax=None):
         ax.add_artist(patch)
 
     ax.grid(False)
-    ax.spines["bottom"].set_visible(False)
+    for side in ["left", "right", "bottom", "top"]:
+        ax.spines[side].set_visible(False)
+    if not depth_tick_markers:
+        ax.yaxis.set_ticks_position("none")
     ax.set_facecolor("white")
     ax.set_xticks([])
     ax.set_xlim(0, 1)
     ax.set_ylim(pzone_bottom + 1, casing_top - 1)
+    if tight_layout:
+        ax.figure.tight_layout()
 
     return patches
