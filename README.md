@@ -26,18 +26,9 @@ Check out the [documentation](http://well-schematics.readthedocs.io/?badge=lates
 
 ## Contributing / roadmap
 
-I would love to have implementations of different types of schematics. Any 
-contributions at all are [welcome](https://github.com/Unidata/MetPy#contributing)!
+Any contributions at all are welcome! 
 
-- <strike>The simplest well: casing with a production zone at the bottom</strike>
-- Different types of production zones, particularly perforations
-- Multiple production zones separated by blanks
-- Different pipe diameters
-- Risers (pipe inside pipe)
-- Drilled hole
-- Cemented zones outside pipe
-- Cement plugs
-- Annotations tied to each casing pipe/production zone
+Please have a look at the current [list of ideas](https://github.com/kinverarity1/well-schematics/labels/enhancement) or check out the [simple roadmap](https://github.com/kinverarity1/well-schematics/milestone/1) for what I am personally planning to work on first.
 
 ## License
 
