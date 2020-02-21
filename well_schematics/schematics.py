@@ -64,6 +64,8 @@ def draw_simple(
             hatch = "-" * hatch_density
         elif pzone_type == "SC":
             hatch = "/" * hatch_density
+        else:
+            hatch = None
         pzone_left = mpatches.Rectangle(
             (1 / 4, pzone_top),
             pipe_width * 0.9,
