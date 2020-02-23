@@ -21,6 +21,7 @@ project = "well-schematics documentation"
 copyright = "2019-2020, Kent Inverarity"
 author = "Kent Inverarity"
 
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
