@@ -1,0 +1,8 @@
+.wy-nav-content {
+    max-width: none;
+    /* max-width: 1200px !important; */
+    }
+
+table.docutils p {
+    font-size: 0.96em !important;
+}

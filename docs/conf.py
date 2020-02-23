@@ -2,7 +2,7 @@
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 # -- Path setup --------------------------------------------------------------
 
@@ -17,14 +17,10 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Well schematics in matplotlib"
-copyright = "2019, Kent Inverarity"
+project = "well-schematics documentation"
+copyright = "2019-2020, Kent Inverarity"
 author = "Kent Inverarity"
 
-# The full version, including alpha/beta/rc tags
-release = "0.2.0"
-
-master_doc = "index"
 
 # -- General configuration ---------------------------------------------------
 
@@ -58,9 +54,27 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "alabaster"
+html_theme = "sphinx_rtd_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+
+intersphinx_mapping = {
+    "python": ("http://docs.python.org/", None),
+    "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
+}
+intersphinx_cache_limit = 1
+
+
+# -- Options for todo extension ----------------------------------------------
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
+
+
+def setup(app):
+    app.add_stylesheet("my_theme.css")
+
