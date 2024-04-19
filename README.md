@@ -17,11 +17,6 @@ $ pip install -U well-schematics
 
 Check out the [documentation](http://well-schematics.readthedocs.io/?badge=latest).
 
-```python
->>> from well_schematics import draw_simple
->>> draw_simple(pzone_top=27, pzone_bottom=36, casing_top=-0.5, pzone_type="S")
-```
-
 ![](example.png)
 
 ## Contributing / roadmap

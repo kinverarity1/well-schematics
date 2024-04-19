@@ -64,6 +64,8 @@ def plot_single_diameter_well(
                 hatch = "-" * hatch_density
             elif seg_type == "slotted casing":
                 hatch = "/" * hatch_density
+            else:
+                hatch = None
             seg_left = mpatches.Rectangle(
                 (1 / 4, seg_from),
                 pipe_width * 0.9,
